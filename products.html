@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products | NUTRIBITES™ - Healthy Dry Fruits Chocolate Bars</title>
+  <link rel="icon" type="image/png" href="images/logo-clean.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <a href="tel:+919437547773"><i class="fa-solid fa-phone"></i> +91 94375 47773</a>
+        <a href="mailto:care@nutribites.in"><i class="fa-solid fa-envelope"></i> care@nutribites.in</a>
+        <span><i class="fa-solid fa-location-dot"></i> Bhubaneswar, Odisha - 751010</span>
+      </div>
+      <div class="top-bar-right">
+        <span>Follow Us:</span>
+        <div class="top-socials">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo-box-wrapper">
+        <img src="images/logo-clean.png" alt="NUTRIBITES Logo" class="brand-logo-img" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li class="active"><a href="products.html">Products <i class="fa-solid fa-chevron-down dropdown-icon"></i></a></li>
+        <li><a href="index.html#recipes">Pairings & Recipes</a></li>
+        <li><a href="index.html#why-us">Why Nutribites</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn" aria-label="Cart"><i class="fa-solid fa-cart-shopping"></i><span class="cart-badge">1</span></button>
+        <a href="contact.html" class="btn-order-now">Order Now</a>
+        <button class="mobile-menu-toggle" aria-label="Toggle Menu"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <div class="subpage-banner">
+    <div class="container">
+      <span class="about-tag">PREMIUM SELECTION</span>
+      <h1>Our Chocolate Bars</h1>
+      <p>Crafted with premium cocoa, roasted almonds, cashews, walnuts, and pistachios. Wholesome indulgence in every bite.</p>
+    </div>
+  </div>
+
+  <!-- Products Grid -->
+  <section class="featured-section" style="padding-top: 50px;">
+    <div class="container">
+      <div class="products-grid" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
+        
+        <!-- Product 1 -->
+        <div class="product-card">
+          <span class="prod-card-badge">Bestseller</span>
+          <div class="prod-img-box">
+            <img src="images/hero-pack-new.png" alt="Healthy Dry Fruits Chocolate Bar" />
+          </div>
+          <h3 class="prod-title">Healthy Dry Fruits Bar</h3>
+          <span class="prod-spec">40g &bull; ₹60 &bull; Almonds, Cashews, Walnuts</span>
+          <button class="btn-view-prod" onclick="alert('Added 40g Healthy Dry Fruits Bar to Cart!')">Add to Cart &bull; ₹60</button>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+          <span class="prod-card-badge">70% Dark</span>
+          <div class="prod-img-box">
+            <img src="images/square-chocolate-hero.jpg" alt="Roasted Almond Bar" />
+          </div>
+          <h3 class="prod-title">Roasted Almond Bar</h3>
+          <span class="prod-spec">50g &bull; ₹75 &bull; Rich Dark Chocolate</span>
+          <button class="btn-view-prod" onclick="alert('Added 50g Roasted Almond Bar to Cart!')">Add to Cart &bull; ₹75</button>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+          <span class="prod-card-badge">Nutty Blend</span>
+          <div class="prod-img-box">
+            <img src="images/packaging-flat.jpg" alt="Cashew & Pistachio" />
+          </div>
+          <h3 class="prod-title">Cashew & Pistachio</h3>
+          <span class="prod-spec">40g &bull; ₹65 &bull; Creamy Cocoa Blend</span>
+          <button class="btn-view-prod" onclick="alert('Added 40g Cashew & Pistachio to Cart!')">Add to Cart &bull; ₹65</button>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+          <span class="prod-card-badge">Festive</span>
+          <div class="prod-img-box">
+            <img src="images/poster-vertical.jpg" alt="Gift Hamper Pack" />
+          </div>
+          <h3 class="prod-title">Festive Indulgence Pack</h3>
+          <span class="prod-spec">Box of 6 Bars &bull; ₹349 &bull; Gift Pack</span>
+          <button class="btn-view-prod" onclick="alert('Added Festive Indulgence Pack to Cart!')">Add to Cart &bull; ₹349</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="images/logo-clean.png" alt="NUTRIBITES Logo" />
+          </div>
+          <p class="footer-about-text">
+            Bringing pure, nutritious and tasty dry fruits chocolate to every home with quality, nature-inspired ingredients and trust.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Our Products</h4>
+          <ul class="footer-links">
+            <li><a href="products.html">Healthy Dry Fruits Bar</a></li>
+            <li><a href="products.html">Roasted Almond Dark Bar</a></li>
+            <li><a href="products.html">Cashew & Pistachio Bar</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul class="footer-links">
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <ul class="footer-contact-info">
+            <li><i class="fa-solid fa-location-dot"></i><span>NutriBites Foods Pvt. Ltd.<br>Bhubaneswar, Odisha - 751010</span></li>
+            <li><i class="fa-solid fa-phone"></i><span>+91 94375 47773</span></li>
+            <li><i class="fa-solid fa-envelope"></i><span>care@nutribites.in</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container" style="padding: 0;">
+          <div>&copy; 2026 NutriBites Foods Pvt. Ltd. All Rights Reserved.</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
