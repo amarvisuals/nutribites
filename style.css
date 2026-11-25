@@ -1913,3 +1913,137 @@ button {
     grid-template-columns: 1fr;
   }
 }
+
+/* ═════════════════════════════════════════
+   7. BRAND CAMPAIGNS & OUTDOOR BILLBOARDS
+═════════════════════════════════════════ */
+.campaigns-section {
+  padding: 80px 0 90px;
+  background: #FAF7F2;
+  position: relative;
+}
+
+.billboard-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.billboard-card {
+  background: #FFFFFF;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(35, 20, 10, 0.05);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease), border-color 0.35s var(--ease);
+}
+
+.billboard-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(35, 20, 10, 0.12);
+  border-color: #E2BFA8;
+}
+
+.billboard-img-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #1F150F;
+  overflow: hidden;
+}
+
+.billboard-card:nth-child(6) .billboard-img-wrap {
+  aspect-ratio: 4 / 5;
+}
+
+.billboard-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s var(--ease);
+}
+
+.billboard-card:hover .billboard-img-wrap img {
+  transform: scale(1.06);
+}
+
+.billboard-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: rgba(26, 14, 7, 0.85);
+  backdrop-filter: blur(8px);
+  color: #FFFFFF;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 5px 12px;
+  border-radius: var(--radius-pill);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: 2;
+}
+
+.billboard-badge i {
+  color: var(--primary);
+}
+
+.billboard-meta {
+  padding: 22px 20px 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.billboard-meta h4 {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.billboard-meta p {
+  font-size: 0.88rem;
+  color: var(--text-body);
+  line-height: 1.55;
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  .billboard-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .campaigns-section {
+    padding: 50px 0 60px;
+  }
+  .billboard-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .billboard-img-wrap {
+    aspect-ratio: 16 / 10;
+  }
+  .billboard-card:nth-child(6) .billboard-img-wrap {
+    aspect-ratio: 16 / 10;
+  }
+  .billboard-meta {
+    padding: 16px 16px 18px;
+  }
+  .billboard-meta h4 {
+    font-size: 1.05rem;
+  }
+  .billboard-meta p {
+    font-size: 0.84rem;
+  }
+}
+
